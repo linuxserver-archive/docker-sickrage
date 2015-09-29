@@ -15,7 +15,7 @@ ADD services/ /etc/service/
 RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
 
 # Volumes and Ports
-VOLUME /config
+VOLUME /config /downloads /tv
 EXPOSE 8081
 
 
