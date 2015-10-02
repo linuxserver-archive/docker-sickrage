@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ ! -d /app/sickrage/.git ]] && git clone https://github.com/SiCKRAGETV/SickRage.git /app/sickrage && chown -R abc:abc /app /config && exit 0
+[[ ! -d /app/sickrage/.git ]] && git clone https://github.com/SiCKRAGETV/SickRage.git /app/sickrage
 cd /app/sickrage
 git pull
-chown -R abc:abc /app
+chown -R abc:abc /app /config
