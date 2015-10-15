@@ -2,25 +2,27 @@
 
 The [LinuxServer.io](https://www.linuxserver.io/) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](https://forum.linuxserver.io/index.php) or for real-time support our [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
 
-# linuxserver/<container-name>
+# linuxserver/sickrage
 
-<Provide a short, concise description of the application. No more than two SHORT paragraphs. Link to sources where possible and include an image illustrating your point if necessary. Point users to the original applications website, as that's the best place to get support - not here.>
+Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://github.com/SiCKRAGETV/SickRage)
 
 ## Usage
 
 ```
-docker create --name=<container-name> -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -e PGID=<gid> -e PUID=<uid>  -p 1234:1234 linuxserver/<container-name>
+docker create --name=sickrage -v /etc/localtime:/etc/localtime:ro -v <path to config>:/config -v <path to downloads>:/downloads -v <path to tv-shows>:/tv -e PGID=<gid> -e PUID=<uid>  -p 8081:8081 linuxserver/sickrage
 ```
 
 **Parameters**
 
-* `-p 4242` - the port(s)
+* `-p 8081` - the port(s)
 * `-v /etc/localtime` for timesync - *optional*
-* `-v /config` -
+* `-v /config` - where sickrage should store config files.
+* `-v /downloads` - your downloads folder
+* `-v /tv` - your tv-shows folder
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it <container-name> /bin/bash`.
+It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it sickrage /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -30,17 +32,18 @@ Part of what makes our containers work so well is by allowing you to specify you
 
 ## Setting up the application 
 
-<Insert a basic user guide here to get a n00b up and running with the software inside the container.> DELETE ME
+Web interface is at <your ip>:8081 , set paths for downloads, tv-shows via the webui.
 
 
 ## Updates
 
-* Upgrade to the latest version simply `docker restart <container-name>`.
-* To monitor the logs of the container in realtime `docker logs -f <container-name>`.
+* Upgrade to the latest version simply `docker restart sickrage`.
+* To monitor the logs of the container in realtime `docker logs -f sickrage`.
 
 
 
 ## Versions
 
-+ **dd.MM.yyyy:** This is the standard Version type now. 
++ **15.10.2015:** Initial Release
+
 
