@@ -32,7 +32,7 @@ Part of what makes our containers work so well is by allowing you to specify you
 
 ## Setting up the application 
 
-Web interface is at <your ip>:8081 , set paths for downloads, tv-shows via the webui.
+Web interface is at <your ip>:8081 , set paths for downloads, tv-shows to match docker mappings via the webui.
 
 
 ## Updates
