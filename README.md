@@ -44,7 +44,7 @@ Web interface is at <your ip>:8081 , set paths for downloads, tv-shows to match 
 
 ## Versions
 
-+ **20.11.2015:** Updated to new repo, by Sickbeard Team.
++ **20.11.2015:** Updated to new repo, by SickRage Team.
 + **15.10.2015:** Initial Release
 
 
