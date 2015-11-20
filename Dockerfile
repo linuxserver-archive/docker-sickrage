@@ -1,6 +1,6 @@
 FROM linuxserver/baseimage.python
 
-MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
+MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>, lonix <lonix@linuxserver.io>
 
 # set python to use utf-8 rather than ascii
 ENV PYTHONIOENCODING="UTF-8"
