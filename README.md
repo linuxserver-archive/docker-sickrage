@@ -4,7 +4,7 @@ The [LinuxServer.io](https://www.linuxserver.io/) team brings you another qualit
 
 # linuxserver/sickrage
 
-Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://github.com/SiCKRAGETV/SickRage)
+Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://github.com/SickRage/SickRage)
 
 ## Usage
 
