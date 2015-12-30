@@ -21,6 +21,9 @@ make -f makefile && \
 install -v -m755 unrar /usr/bin && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
+# install required version pyopenssl
+RUN pip install pyopenssl==0.13.1
+
 # Adding Custom files
 ADD init/ /etc/my_init.d/
 ADD services/ /etc/service/
