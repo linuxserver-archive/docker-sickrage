@@ -2,7 +2,7 @@ FROM linuxserver/baseimage.python
 
 MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>, lonix <lonix@linuxserver.io>
 
-ENV APTLIST="libxslt1-dev libxslt1.1 libxml2-dev libxml2 libssl-dev libffi-dev python-pip python-dev libssl-dev"
+ENV APTLIST="python-dev"
 
 # set python to use utf-8 rather than ascii
 ENV PYTHONIOENCODING="UTF-8"
@@ -20,9 +20,6 @@ cd /tmp/unrar && \
 make -f makefile && \
 install -v -m755 unrar /usr/bin && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
-
-# install required version pyopenssl
-RUN pip install pyopenssl==0.13.1
 
 # Adding Custom files
 ADD init/ /etc/my_init.d/
