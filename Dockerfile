@@ -2,11 +2,23 @@ FROM linuxserver/baseimage.python
 
 MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>, lonix <lonix@linuxserver.io>
 
+ENV APTLIST="libxslt1-dev libxslt1.1 libxml2-dev libxml2 libssl-dev libffi-dev python-pip python-dev libssl-dev"
+
 # set python to use utf-8 rather than ascii
 ENV PYTHONIOENCODING="UTF-8"
 
 # install pip packages
-RUN pip install mako && \
+RUN apt-get update -qy && \
+apt-get install $APTLIST -qy && \
+apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
+
+# build unrar
+RUN mkdir -p /tmp/unrar && \
+curl -o /tmp/unrarsource.tar.gz -L http://rarlab.com/rar/unrarsrc-5.2.7.tar.gz && \
+tar -xvf /tmp/unrarsource.tar.gz -C /tmp/unrar --strip-components=1 && \
+cd /tmp/unrar && \
+make -f makefile && \
+install -v -m755 unrar /usr/bin && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 # Adding Custom files
