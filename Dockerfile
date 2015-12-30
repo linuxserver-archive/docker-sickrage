@@ -5,8 +5,13 @@ MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>, lonix <lonix@linuxserver.
 # set python to use utf-8 rather than ascii
 ENV PYTHONIOENCODING="UTF-8"
 
-# install pip packages
-RUN pip install mako && \
+# build unrar
+RUN mkdir -p /tmp/unrar && \
+curl -o /tmp/unrarsource.tar.gz -L http://rarlab.com/rar/unrarsrc-5.2.7.tar.gz && \
+tar -xvf /tmp/unrarsource.tar.gz -C /tmp/unrar --strip-components=1 && \
+cd /tmp/unrar && \
+make -f makefile && \
+install -v -m755 unrar /usr/bin && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 # Adding Custom files
@@ -17,5 +22,6 @@ RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh
 # Volumes and Ports
 VOLUME /config /downloads /tv
 EXPOSE 8081
+
 
 
