@@ -43,7 +43,7 @@ Web interface is at <your ip>:8081 , set paths for downloads, tv-shows to match 
 
 
 ## Versions
-
++ **30.12.2015:** Build later version of unrar from source, removed uneeded mako package.
 + **20.11.2015:** Updated to new repo, by SickRage Team.
 + **15.10.2015:** Initial Release
 
