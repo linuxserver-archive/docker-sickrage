@@ -1,6 +1,7 @@
 #!/bin/bash
 
-[[ ! -d /app/sickrage/.git ]] && git clone https://github.com/SickRage/SickRage.git /app/sickrage
+[[ ! -d /app/sickrage/.git ]] && git clone --recursive  https://github.com/SickRage/SickRage.git /app/sickrage
 cd /app/sickrage
 git pull
+git submodule update --init --recursive
 chown -R abc:abc /app /config
