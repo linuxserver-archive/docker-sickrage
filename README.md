@@ -9,7 +9,15 @@ Automatic Video Library Manager for TV Shows. It watches for new episodes of you
 ## Usage
 
 ```
-docker create --name=sickrage -v /etc/localtime:/etc/localtime:ro -v <path to config>:/config -v <path to downloads>:/downloads -v <path to tv-shows>:/tv -e PGID=<gid> -e PUID=<uid>  -p 8081:8081 linuxserver/sickrage
+docker create --name=sickrage \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v <path to config>:/config \
+  -v <path to downloads>:/downloads \
+  -v <path to tv-shows>:/tv \
+  -e PGID=<gid> \
+  -e PUID=<uid>  \
+  -p 8081:8081 \
+  linuxserver/sickrage
 ```
 
 **Parameters**
