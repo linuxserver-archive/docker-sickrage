@@ -30,7 +30,7 @@ docker create --name=sickrage \
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it sickrage /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it sickrage /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -51,8 +51,9 @@ Web interface is at <your ip>:8081 , set paths for downloads, tv-shows to match 
 
 
 ## Versions
-+ **30.12.2015:** Build later version of unrar from source, removed uneeded mako package.
-+ **20.11.2015:** Updated to new repo, by SickRage Team.
-+ **15.10.2015:** Initial Release
++ **30.06.16:** Rebase to alpine linux for smaller image
++ **30.12.15:** Build later version of unrar from source, removed uneeded mako package.
++ **20.11.15:** Updated to new repo, by SickRage Team.
++ **15.10.15:** Initial Release
 
 
