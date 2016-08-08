@@ -7,6 +7,6 @@ ENV PYTHONIOENCODING="UTF-8"
 # copy local files
 COPY root/ /
 
-# Volumes and Ports
-VOLUME /config /downloads /tv
+# ports and volumes
 EXPOSE 8081
+VOLUME /config /downloads /tv
