@@ -54,7 +54,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application 
 
-Web interface is at <your ip>:8081 , set paths for downloads, tv-shows to match docker mappings via the webui.
+Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to match docker mappings via the webui.
 
 
 ## Info
