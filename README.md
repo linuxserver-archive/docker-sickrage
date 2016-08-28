@@ -11,7 +11,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 [![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickrage)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickrage/)
 [hub]: https://hub.docker.com/r/linuxserver/sickrage/
 
-Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://github.com/SickRage/SickRage)
+Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://sickrage.github.io/)
 
 [![sickrage](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickrage-banner.png)][sickrageurl]
 [sickrageurl]: https://sickrage.github.io/
