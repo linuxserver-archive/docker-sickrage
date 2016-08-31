@@ -6,9 +6,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/sickrage
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickrage.svg)][hub]
-[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickrage.svg)][hub]
-[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickrage)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickrage/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickrage.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickrage.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickrage)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickrage/)
 [hub]: https://hub.docker.com/r/linuxserver/sickrage/
 
 Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://sickrage.github.io/)
