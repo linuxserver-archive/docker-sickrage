@@ -68,6 +68,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **30.09.16:** Fix umask.
 + **09.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine linux.
