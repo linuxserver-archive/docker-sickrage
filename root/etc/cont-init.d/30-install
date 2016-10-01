@@ -2,9 +2,9 @@
 
 # install app
 [[ ! -d /app/sickrage/.git ]] && \
-	git clone https://github.com/SickRage/SickRage.git /app/sickrage
+	git clone https://github.com/${FORK}.git /app/sickrage
 
-# permissions
+# permissions
 chown -R abc:abc \
 	/app \
 	/config
