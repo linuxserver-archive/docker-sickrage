@@ -28,6 +28,7 @@ docker create --name=sickrage \
 -v <path to tv-shows>:/tv \
 -e PGID=<gid> -e PUID=<uid>  \
 -e TZ=<timezone> \
+-e FORK=<githubFork>
 -p 8081:8081 \
 linuxserver/sickrage
 ```
@@ -41,6 +42,7 @@ linuxserver/sickrage
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for timezone information, eg Europe/London
+* `-e FORK` for custom github sickrage fork, eg cytec/sickrage
 
 It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it sickrage /bin/bash`.
 
@@ -68,6 +70,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **01.10.16:** Custom Forks
 + **30.09.16:** Fix umask.
 + **09.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README.
