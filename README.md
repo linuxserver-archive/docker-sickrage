@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/sickrage
-[![](https://images.microbadger.com/badges/image/linuxserver/sickrage.svg)](http://microbadger.com/images/linuxserver/sickrage "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickrage.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickrage.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickrage)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickrage/)
+[![](https://images.microbadger.com/badges/version/linuxserver/sickrage.svg)](https://microbadger.com/images/linuxserver/sickrage "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/sickrage.svg)](http://microbadger.com/images/linuxserver/sickrage "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickrage.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickrage.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickrage)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickrage/)
 [hub]: https://hub.docker.com/r/linuxserver/sickrage/
 
 Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://sickrage.github.io/)
@@ -64,14 +64,22 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 * To monitor the logs of the container in realtime `docker logs -f sickrage`.
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' sickrage`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/sickrage`
 
 
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **30.09.16:** Fix umask.
 + **09.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine linux.
 + **30.12.15:** Build later version of unrar from source, removed uneeded mako package.
 + **20.11.15:** Updated to new repo, by SickRage Team.
-+ **15.10.15:** Initial Release
++ **15.10.15:** Initial Release.
