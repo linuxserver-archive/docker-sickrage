@@ -81,7 +81,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **30.09.16:** Fix umask.
 + **09.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README.
