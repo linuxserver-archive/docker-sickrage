@@ -19,6 +19,11 @@ Automatic Video Library Manager for TV Shows. It watches for new episodes of you
 
 [![sickrage](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickrage-banner.png)][appurl]
 
+
+# DMCA Notice
+Due to a [DMCA notice](https://github.com/github/dmca/blob/master/2017/2017-07-17-SiCKRAGE.md) affecting the github repository that this image pulls from on first run, the image will currently not function for new users and existing users will see errors about not being able to reach the github repo in their logs.
+This is a situation beyond our control, but we will be watching to see the outcome before deciding upon any further action on our part.
+
 ## Usage
 
 ```
