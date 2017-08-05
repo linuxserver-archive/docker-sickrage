@@ -20,10 +20,6 @@ Automatic Video Library Manager for TV Shows. It watches for new episodes of you
 [![sickrage](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickrage-banner.png)][appurl]
 
 
-# DMCA Notice
-Due to a [DMCA notice](https://github.com/github/dmca/blob/master/2017/2017-07-17-SiCKRAGE.md) affecting the github repository that this image pulls from on first run, the image will currently not function for new users and existing users will see errors about not being able to reach the github repo in their logs.
-This is a situation beyond our control, but we will be watching to see the outcome before deciding upon any further action on our part.
-
 ## Usage
 
 ```
@@ -39,7 +35,7 @@ linuxserver/sickrage
 
 ## Parameters
 
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
 For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
 So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
@@ -66,7 +62,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
 
-## Setting up the application 
+## Setting up the application
 
 Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to match docker mappings via the webui.
 
@@ -75,7 +71,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 * To monitor the logs of the container in realtime `docker logs -f sickrage`.
 
-* container version number 
+* container version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' sickrage`
 
@@ -86,6 +82,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **05.08.17:** Internal git pull instead of at runtime.
 + **25.05.17:** Rebase to alpine 3.6
 + **07.02.17:** Rebase to alpine 3.5
 + **14.10.16:** Add version layer information.
