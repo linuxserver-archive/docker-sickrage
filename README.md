@@ -82,6 +82,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **12.12.17:** Rebase to alpine 3.7
 + **06.08.17:** Internal git pull instead of at runtime.
 + **25.05.17:** Rebase to alpine 3.6
 + **07.02.17:** Rebase to alpine 3.5
