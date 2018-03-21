@@ -10,6 +10,10 @@ LABEL maintainer="sparklyballs"
 ENV PYTHONIOENCODING="UTF-8"
 
 RUN \
+ echo "**** install packages ****" && \
+ apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/main \
+	nodejs && \
  echo "**** install app ****" && \
  git clone --depth=1 https://github.com/SickRage/SickRage.git /app/sickrage
 
