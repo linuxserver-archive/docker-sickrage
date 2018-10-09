@@ -2,7 +2,7 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
-[appurl]: https://sickrage.github.io/
+[appurl]: https://sick-rage.github.io/
 [hub]: https://hub.docker.com/r/linuxserver/sickrage/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
@@ -82,6 +82,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **09.08.18:** Change repository to Sick-Rage
 + **17.08.18:** Rebase to alpine 3.8.
 + **20.03.18:** In lieu of a definite fix from SR, add nodejs package for use with torrentz and other sources.
 + **12.12.17:** Rebase to alpine 3.7.
