@@ -15,7 +15,7 @@ RUN \
 	--repository http://nl.alpinelinux.org/alpine/edge/main \
 	nodejs && \
  echo "**** install app ****" && \
- git clone --depth=1 https://github.com/Sick-Rage/Sick-Rage.git /app/sickrage
+ git clone --depth=1 https://github.com/SickChill/SickChill.git /app/sickrage
 
 # copy local files
 COPY root/ /
