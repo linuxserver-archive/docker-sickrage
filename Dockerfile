@@ -22,12 +22,11 @@ RUN \
         | jq -r '. | .sha'); \
  fi && \
  mkdir -p /app/sickrage && \
- curl -o \
- /tmp/sickrage.tar.gz -L \
-        "https://github.com/SickChill/SickChill/archive/${SICKRAGE_COMMIT}.tar.gz" && \
- tar xf \
- /tmp/sickrage.tar.gz -C \
-        /app/sickrage --strip-components=1 && \
+ cd /app/sickrage && \
+ git init && \
+ git remote add origin https://github.com/SickChill/SickChill.git && \
+ git fetch --depth 1 origin ${SICKRAGE_COMMIT} && \
+ git checkout FETCH_HEAD && \
  echo "**** cleanup ****" && \
  rm -f /tmp/*
 
