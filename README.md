@@ -35,7 +35,7 @@ linuxserver/sickrage
 
 ## Parameters
 
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
 For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
 So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
@@ -62,7 +62,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
 
-## Setting up the application 
+## Setting up the application
 
 Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to match docker mappings via the webui.
 
@@ -71,7 +71,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 * To monitor the logs of the container in realtime `docker logs -f sickrage`.
 
-* container version number 
+* container version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' sickrage`
 
@@ -82,6 +82,7 @@ Web interface is at `<your ip>:8081` , set paths for downloads, tv-shows to matc
 
 ## Versions
 
++ **16.01.19:** Add pipeline logic and multi arch.
 + **09.08.18:** Change repository to Sick-Rage
 + **17.08.18:** Rebase to alpine 3.8.
 + **20.03.18:** In lieu of a definite fix from SR, add nodejs package for use with torrentz and other sources.
