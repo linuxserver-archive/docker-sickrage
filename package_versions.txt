@@ -67,5 +67,5 @@ c-ares c-ares-1.15.0-r0
 libcrypto1.1 libcrypto1.1-1.1.1a-r1
 http-parser http-parser-2.8.1-r0
 libssl1.1 libssl1.1-1.1.1a-r1
-libuv libuv-1.23.2-r0
+libuv libuv-1.25.0-r0
 nodejs nodejs-10.14.2-r0
