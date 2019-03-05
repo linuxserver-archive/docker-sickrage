@@ -1,0 +1,21 @@
+#!/usr/bin/with-contenv bash
+
+echo '
+******************************************************
+******************************************************
+*                                                    *
+*                                                    *
+*          This image has been depreciated           *
+*                                                    *
+*           Use the multi-arch images at             *
+*                                                    *
+*               linuxserver/sickchill                *
+*                                                    *
+*    https://hub.docker.com/r/linuxserver/sickchill  *
+*                                                    *
+*   https://github.com/linuxserver/docker-sickchill  *
+*                                                    *
+*                                                    *
+*                                                    *
+******************************************************
+******************************************************'
