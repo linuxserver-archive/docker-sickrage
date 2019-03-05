@@ -1,5 +1,7 @@
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
+# This image has been depreciated and replaced with [linuxserver/docker-sickchill](https://github.com/linuxserver/docker-sickchill)
+
 The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring :-
 
  * regular and timely application updates
