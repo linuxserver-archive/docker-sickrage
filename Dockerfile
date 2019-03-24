@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python:3.9
+FROM lsiobase/python:3.9
 
 # set version label
 ARG BUILD_DATE
@@ -16,7 +16,6 @@ RUN \
 	nodejs && \
  echo "**** install app ****" && \
  git clone --depth=1 https://github.com/SickChill/SickChill.git /app/sickrage
-
 
 # copy local files
 COPY root/ /
